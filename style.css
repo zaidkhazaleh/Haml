@@ -1,0 +1,123 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(-45deg, #200e4b,#200e4b,#2877a0);
+  background-size: 600% 600%;
+  animation: gradient 12s ease infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+ 
+}
+
+img {
+    width: 100px;
+    height: auto;
+     transform: translateY(260px); /* يرفع الصورة للأعلى 260px */
+       display: block;       /* مهم لتطبيق المسافات بشكل صحيح */
+  margin: 10px auto;       /* لو تريدها بالوسط */
+  margin-bottom: 160px;  /* المسافة بين الصورة وبقية المحتوى */
+
+}
+
+h1 {
+    color: white;
+    font-family: 'Arial', sans-serif;
+    font-size: 36px;
+    margin: 0;
+    transform: translateY(80px); /* يرفع النص للأعلى 50px */
+}
+
+p {
+    color: white;
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+    margin: 10px 0 0 0;
+    transform: translateY(80px); /* يرفع النص للأعلى 50px */
+    text-align: center;
+}
+
+.btn {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 250px;
+      
+}
+a {
+  color: white;
+  text-decoration: none;
+  width: 100%;              /* يخلي الرابط ياخذ كامل عرض العنصر */
+  display: flex;
+  align-items: center;      /* توسيط عمودي */
+  justify-content: center;  /* يخلي المحتوى بالنص */
+}
+
+.btn i {
+  position: absolute;   /* نخلي الأيقونة ثابتة على اليسار */
+  left: 10px;           /* تبعد 10px عن يسار العنصر */
+  color: #ffffff;
+    font-size: 24px;      /* حجم الأيقونة */
+}
+.btn:hover {
+  cursor: pointer;
+}
+
+
+   .btn {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #2a185d57;
+      color: #fff;
+      padding: 12px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: bold;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+      transition: all .2s ease;
+          transform: translateY(90px);
+      margin-bottom: 10px; /* هذه المسافة بين كل عنصر والذي بعده */
+    box-shadow: 5px 5px 10px -2px rgba(255, 255, 255, 0.596); /* ظل خفيف */
+    }
+.footer {
+  text-align: center;      /* يوضع في الوسط */
+  padding: 20px;
+   transform: translateY(100px);
+  color: #fff;             /* لون الخط */
+  font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
